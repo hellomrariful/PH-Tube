@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PH Tube</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./Images/player.png" type="image/x-icon">
+  <!-- Tailwind abd Daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Style And Style -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="container mx-auto px-14">
+  <!-- Header Section Start -->
+  <header>
+    <section>
+      <div class="lg:flex md:flex justify-between items-center text-center mt-12">
+        <div class="flex justify-center">
+          <img class="mb-5 lg:-mb-0 md:-mb-0 cursor-pointer" src="./Images/Logo.png" alt="">
+        </div>
+        <button id="sort" class="px-5 py-3 bg-[#25252533] text-[#252525] text-xl font-medium rounded active:bg-[#FF1F3D]">Sort by
+          view</button>
+        <button id="blog-btn"
+          class="px-5 py-3 bg-[#FF1F3D] text-white text-xl font-medium rounded ml-3 mt-3 lg:-mt-0 md:-mt-0">Blog</button>
+      </div>
+      <hr class="bg-[#17171733] mt-5 h-1">
+    </section>
+  </header>
+  <!-- Header Section End -->
+  <!-- Main Section Start -->
+  <main>
+    <!-- category section -->
+    <div id="category-container" class="gap-3 lg:flex md:flex justify-center items-center text-center">
+
+    </div>
+
+    <!-- Card Section -->
+    <div id="card-container" class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-6">
+
+    </div>
+
+    <!-- No Data Found -->
+    <!-- <div id="no-data-container" class="lg:mt-52 md:mt-52 mt-16">
+      <img class="flex justify-center mx-auto mb-8" src="./Images/Icon.png" alt="">
+      <h1 class="text-3xl text-center text-[#171717] font-bold">Oops!! Sorry, There is no content here</h1>
+    </div> -->
+
+  </main>
+  <!-- Main Section End -->
+  <!-- Footer Section Start -->
+  <footer>
+
+  </footer>
+  <!-- Footer Section End -->
+  <!-- JS File Connected -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

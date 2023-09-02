@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./Images/verified.png" type="image/x-icon">
+  <!-- Tailwind abd Daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Style And Style -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="container mx-auto px-14">
+
+  <section class="h-[80vh]">
+    <h1
+      class="lg:mt-32 md:mt-32 mt-10 lg:text-4xl md:text-4xl text-[27px] font-extrabold text-center lg:mb-20 md:mb-20 mb-10   ">
+      Our Latest <span class="text-[#FF1F3D]">Blog</span></h1>
+
+    <div class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-6">
+
+      <div class="bg-base-100 shadow-xl selection:bg-fuchsia-300 selection:text-fuchsia-900 hover:bg-slate-200">
+        <figure class="px-10 pt-10">
+          <img class="" src="./Images/let-data-const.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Discuss the scope of var, let, and const</h2>
+          <p class="py-2 text-[#FF1F3D]">01 September 2023</p>
+          <button class="btn text-white bg-neutral-800 hover:bg-[#FF1F3D]" onclick="my_modal_5.showModal()">Rea
+            Now</button>
+          <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <form method="dialog" class="modal-box">
+              <h1 class="font-semibold mb-2">In JS, We can declare variables in three way. The way is var, let and
+                const. Let's Discuss the scope of variables.</h1>
+              <div class="mb-3">
+                <strong>var:</strong> It's can be both reassigned and redeclare. <br>
+                <strong>let:</strong> It's allow to reassign but you can't redeclare.<br>
+                <strong>const:</strong> It's can't reassigned another value or redeclare. <br>
+              </div>
+              You shouldn't use var anymore. You should use let or const instead. if you're not going to change the
+              value of a variable, it is good practice to use const.
+              </p>
+              <div class="mt-5">
+                <button class="btn">Close</button>
+              </div>
+            </form>
+          </dialog>
+        </div>
+      </div>
+
+      <div class="bg-base-100 shadow-xl selection:bg-fuchsia-300 selection:text-fuchsia-900 hover:bg-slate-200">
+        <figure class="px-10 pt-10">
+          <img class="w-full" src="./Images/null-undefined.jpeg" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Discuss the use cases of null and undefined</h2>
+          <p class="py-2 text-[#FF1F3D]">01 September 2023</p>
+          <button class="btn text-white bg-neutral-800 hover:bg-[#FF1F3D]" onclick="my_modal_2.showModal()">Rea
+            Now</button>
+          <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
+            <form method="dialog" class="modal-box">
+              <h1 class="font-semibold mb-2">In JS, Null and Undefined look like similar. But their use cases is
+                different. Let's talk us the use cases of null and undefined</h1>
+              <div class="mb-3">
+                <strong>null:</strong> Null means an empty value or a blank value. We use for Initializing Variables,
+                Function return value, Resetting Values and more.
+                <br>
+                <div class="mt-2">
+                  <strong>undefined:</strong> In JavaScript, Undefined is primitive data type. Undefined means when you
+                  declared a variable and not initialized or not assigned with any value, by default the variable stored
+                  <b>undefined.</b> You get 8 ways undefined.
+                </div>
+                </p>
+                <div class="mt-5">
+                  <button class="btn">Close</button>
+                </div>
+            </form>
+          </dialog>
+        </div>
+      </div>
+
+      <div class="bg-base-100 shadow-xl selection:bg-fuchsia-300 selection:text-fuchsia-900 hover:bg-slate-200">
+        <figure class="px-10 pt-10">
+          <img class="rounded-lg w-full" src="./Images/rest-api.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">What do you mean by REST API?</h2>
+          <p class="py-2 text-[#FF1F3D]">01 September 2023</p>
+          <button class="btn text-white bg-neutral-800 hover:bg-[#FF1F3D]" onclick="my_modal_3.showModal()">Rea
+            Now</button>
+          <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
+            <form method="dialog" class="modal-box">
+              <h1 class="font-semibold mb-2">REST API means: Representational State Transfer Application Programming
+                Interface.</h1>
+              <div class="mb-3 mt-2">
+                REST API convention for build interacting web services. It's use in HTTPs method like GET, POST,
+                PUT/PATCH and DELETE to perform operations on resource. <br> Mainly REST API use for connect web to
+                internet data.
+                </p>
+                <div class="mt-5">
+                  <button class="btn">Close</button>
+                </div>
+            </form>
+          </dialog>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="hidden">
+      <div class="max-w-lg mx-auto p-8">
+        <details
+          class="open:bg-white dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg p-6 rounded-lg"
+          open>
+          <summary class="text-sm leading-6 text-slate-900 dark:text-white font-semibold select-none">
+            Why do they call it Ovaltine?
+          </summary>
+          <div class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">
+            <p>The mug is round. The jar is round. They should call it Roundtine.</p>
+          </div>
+        </details>
+      </div>
+
+  </section>
+</body>
+
+</html>
