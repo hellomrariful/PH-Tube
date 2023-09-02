@@ -22,7 +22,7 @@ const loadCategory = async () => {
   dataCategory.forEach((category) => {
     const div = document.createElement('div');
     div.innerHTML = `
-        <button onclick='sortFunction("${category.category_id}"); sortCategory("${category.category_id}")' class="px-4 py-2 bg-[#25252526] text-[#252525B2] text-xl font-semibold rounded mt-9 active:bg-[#FF1F3D]">${category.category}</button>
+        <button onclick='sortFunction("${category.category_id}"); sortCategory("${category.category_id}")' class="px-4 py-2 bg-[#25252526] text-[#252525B2] text-xl font-semibold rounded mt-9 focus:bg-[#FF1F3D] focus:text-white active:bg-[#FF1F3D] active:text-white">${category.category}</button>
         `
     categoryContainer.appendChild(div)
   })
@@ -40,12 +40,10 @@ const handelCategory = (cardData) => {
   cardContainer.innerHTML = ''
 
   if (cardData.length === 0) {
-    // const noDataContainer = document.getElementById('no-data-container')
-    // const div = document.createElement('div')
     cardContainer.innerHTML = `
-    <div id="no-data-container" class="lg:mt-60 md:mt-52 mt-16 mb-8">
+    <div class="lg:mt-52 md:mt-52 mt-16 mb-8">
     <img class="flex justify-center mx-auto mb-8" src="./Images/Icon.png" alt="">
-    <h1 class="text-3xl text-center text-[#171717] font-bold">Oops!! Sorry, There is no content here</h1>
+    <h1 class="lg:text-3xl md:text-3xl text-2xl text-center text-[#171717] font-bold">Oops!! Sorry, There is no content here</h1>
   </div>
     `
     cardContainer.classList.remove('grid', 'lg:grid-cols-4', 'md:grid-cols-3', 'grid-cols-1', 'gap-6');
