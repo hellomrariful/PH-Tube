@@ -43,15 +43,15 @@ const handelCategory = (cardData) => {
     // const noDataContainer = document.getElementById('no-data-container')
     // const div = document.createElement('div')
     cardContainer.innerHTML = `
-      <div class="">
-      <img class="lg:-mr-72 md:-mr-56 mx-auto mb-8 lg:mt-60 md:mt-60 mt-16" src="./Images/Icon.png" alt="">
-      <h1 class="lg:-mr-96 md:ml-80 lg:lg:mx-72 md:mx-72	 text-3xl text-[#171717] font-bold">Oops!! Sorry, There is no content here</h1>
-      </div>
+    <div id="no-data-container" class="lg:mt-52 md:mt-52 mt-16">
+    <img class="flex justify-center mx-auto mb-8" src="./Images/Icon.png" alt="">
+    <h1 class="text-3xl text-center text-[#171717] font-bold">Oops!! Sorry, There is no content here</h1>
+  </div>
     `
-//  noDataContainer.appendChild(div)
-
+    cardContainer.classList.remove('grid', 'lg:grid-cols-4', 'md:grid-cols-3', 'grid-cols-1', 'gap-6');
   }
   else {
+    cardContainer.classList.add('grid', 'lg:grid-cols-4', 'md:grid-cols-3', 'grid-cols-1', 'gap-6');
     cardData.forEach((card) => {
       function secondsToHoursMinutesAgo(seconds) {
         const hours = Math.floor(seconds / 3600);
@@ -95,11 +95,9 @@ const handelCategory = (cardData) => {
   }
 }
 
-const blog = document.getElementById('blog-btn').addEventListener('click', function(){
+const blog = document.getElementById('blog-btn').addEventListener('click', function () {
   window.location.href = 'blog.html'
 })
-
-
 
 loadCategory()
 sortFunction(1000)
