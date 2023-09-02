@@ -43,7 +43,7 @@ const handelCategory = (cardData) => {
     // const noDataContainer = document.getElementById('no-data-container')
     // const div = document.createElement('div')
     cardContainer.innerHTML = `
-    <div id="no-data-container" class="lg:mt-52 md:mt-52 mt-16">
+    <div id="no-data-container" class="lg:mt-60 md:mt-52 mt-16 mb-8">
     <img class="flex justify-center mx-auto mb-8" src="./Images/Icon.png" alt="">
     <h1 class="text-3xl text-center text-[#171717] font-bold">Oops!! Sorry, There is no content here</h1>
   </div>
